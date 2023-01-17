@@ -1,0 +1,43 @@
+<!--https://scrimba.com/learn/htmlandcss/aside-flexbox-child-containers-cE6nGKsN se video
+flexbox betragter hver element i div'en som et enkelt "child", derfor laver den en box for hvert element når der bruges display: flex;. Det betyder,
+at vores BC layout ikke fungerer som det skal. Dette problem løses ved, at pakke elements ind i deres egen div, i dette tilfælde
+laver vi en div til teksten. Således vil div class card kun indeholde 2 "children" i stedet for 6,nemlig <img og <div>  hvilket gør vores
+layout med billede til venstre og teksten højre, stablet horisontalt muligt. - -->
+
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Business Card</title>
+        <link href="C:\Users\janni\Desktop\coding\htmlcourse\business-card\styles.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <div class="card borderblue"> <!--Elements kan have flere classes. Her har vi brugt en "utility class" - disse benyttes
+        hvis man ønsker hurtigt at tilføje f.eks borders mere end et sted, det kan også være ift. tekst-størrelser og typer osv.-->
+
+        
+                 <img
+            
+                 class="bcimg "
+                  src="C:\Users\janni\Desktop\coding\htmlcourse\business-card\images\jannik.jpg"
+                  alt="Et billede af en skide flot fyr">
+
+        
+
+            <div class="" >
+
+                 <h3>Jannik Balduin Hansen</h3>
+
+                 <p>Fucking grinern type</p>
+
+                 <h4>Aalborg, Danmark</h4>
+
+            </div>     
+
+        </div>
+
+    </body>
+</html>

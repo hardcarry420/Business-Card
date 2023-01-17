@@ -1,0 +1,36 @@
+body {
+    margin: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /*disse fonts er såkaldte "web-safe" fonts.
+    Dvs. at benytter man en client (mobil, computer, tv osv) til at besøge en hjemmeside
+    kan disse clients godt læse font typen på hjemmesiden, da den har den installeret i forvejen, og derved behøver
+    hjemmesidens server ikke at sende disse data. 
+    Besøger man en hjemmeside hvor font typen ikke er installeret, vil den ikke kunne læses, derfor er det en fordel at
+    sætte flere fonts som type, da disse vil blive benyttet hvis den første font type ikke kan. */ 
+    
+}
+
+.bcimg {
+    width: 150px;
+    box-shadow: 5px 10px 5px;
+
+}
+
+.card {
+    
+    padding: 20px;
+    display: flex; /* flexbox er by default display: block, også selvom den er sat til display: flex; - dette betyder at elements kan centreres ved at sætte 
+    margin-left/right: auto;*/
+    text-align: center;
+    width: 400px;
+    margin: 0 auto;
+    color: #2b2839;
+    background-color: #ddebf8;
+    border-bottom: solid 5px #d8cefe;
+    justify-content: space-around; /* justify-content bruges til at styre positionen på elementerne i flexbox - det fungerer således at
+    det white space der er fordelt omkring de forskellige elements bliver fordelt anderledes ved brug af justify-content
+    space-around gør f.eks sådan at al white-space bliver fordelt omrking vores elements, hvilket får dem til at være
+    placeret ved siden af hinanden hvor vi gerne vil have dem.
+    justify-content: center; fordeler white-space til højre og venstre for vores element, hvilket vil placere det i midten.
+    justify-content: left/right; fordeler white space til venstre eller højre for vores element osv osv.;*/
+}
+
